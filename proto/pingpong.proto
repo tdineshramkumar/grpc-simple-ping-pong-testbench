@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package pingpong;
+
+message Hello{
+	string Message=1;
+}
+
+service PingPong{
+	rpc SayHello(Hello) returns (Hello); 
+}
