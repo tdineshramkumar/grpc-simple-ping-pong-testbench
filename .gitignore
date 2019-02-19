@@ -3,6 +3,7 @@ cpp1/*
 percentile.py
 cpp/server
 cpp/client
+cpp/async_server
 pingpong/server/server
 pingpong/client/client
 driver/cpp-*

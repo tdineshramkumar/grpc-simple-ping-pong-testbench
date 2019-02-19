@@ -17,6 +17,8 @@ client:	client.cc pingpong.grpc.pb.o pingpong.pb.o
 server:	server.cc pingpong.grpc.pb.o pingpong.pb.o
 	$(CC) -o server server.cc pingpong.grpc.pb.o pingpong.pb.o $(CFLAGS)
 
+async_server:	async_server.cc pingpong.grpc.pb.o pingpong.pb.o
+	$(CC) -o async_server async_server.cc pingpong.grpc.pb.o pingpong.pb.o $(CFLAGS)
 clean:	
 	rm *.o server client
 
